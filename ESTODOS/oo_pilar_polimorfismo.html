@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Animal {
+        constructor(cor, tamanho, peso) {
+          this.cor = cor
+          this.tamanho = tamanho + " cm"
+          this.peso = peso + " g"
+        }
+
+        dormir() {
+          console.log("Dormir")
+        }
+      }
+
+      class Passaro extends Animal {
+        constructor(bico, cor, tamanho, peso) {
+          super(cor, tamanho, peso)
+          this.bico = bico
+        }
+
+        voar() {
+          console.log("Voar")
+        }
+      }
+
+      class Papagaio extends Passaro {
+        constructor(cor, tamanho, peso, bico, sabeFalar) {
+          super(bico, cor, tamanho, peso)
+          this.sabeFalar = sabeFalar
+        }
+
+        falar() {
+          console.log("Falar")
+        }
+      }
+
+      class Avestruz extends Passaro {
+        constructor(cor, tamanho, peso, bico) {
+          super(bico, cor, tamanho, peso)
+        }
+
+        enterrarCabeca() {
+          console.log("Cabeça enterrada")
+        }
+
+        voar() {
+          console.log("Não sabe voar")
+        }
+      }
+
+      let papagaio = new Papagaio("Verde", 30, 350, "Médio", true)
+
+      let avestruz = new Avestruz("Branco", 125, 2000, "Grande")
+
+      console.log(papagaio)
+      console.log(avestruz)
+
+      avestruz.enterrarCabeca()
+      avestruz.voar()
+      papagaio.voar()
+    </script>
+  </body>
+</html>

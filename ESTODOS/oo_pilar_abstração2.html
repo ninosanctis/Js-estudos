@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // // software de marcenaria
+      // // cadeira e sofá
+
+      // // paradigma procedural
+      // // cadeira
+      // let qtde_pernas = 4
+      // let giratoria = false
+      // let cor = "azul"
+
+      // // array de cadeiras
+
+      // let cadeiras = []
+
+      // cadeiras[0] = []
+      // cadeiras[0]["qtde_pernas"] = 4
+      // cadeiras[0]["giratoria"] = false
+      // cadeiras[0]["cor"] = "azul"
+
+      // cadeiras[1] = []
+      // cadeiras[1]["qtde_pernas"] = 1
+      // cadeiras[1]["giratoria"] = true
+      // cadeiras[1]["cor"] = "vermelho"
+
+      // console.log(cadeiras)
+
+      // function girarCadeira(indice) {
+      //   if (cadeiras[indice]["giratoria"] === true) {
+      //     console.log("girou")
+      //   } else {
+      //     console.log("não girou")
+      //   }
+      // }
+
+      // function adicionarCadeira(qtde_pernas, giratoria, cor) {
+      //   let cadeira = []
+      //   cadeira["qtde_perdas"] = qtde_pernas
+      //   cadeira["giratoria"] = giratoria
+      //   cadeira["cor"] = cor
+
+      //   cadeiras.push(cadeira)
+      // }
+
+      // adicionarCadeira(3, false, "verde")
+
+      // girarCadeira(1)
+
+      // paradigma 00
+
+      class Sofa {
+        constructor(qtde_lugares, reclinavel, cor) {
+          this.qtde_lugares = qtde_lugares
+          this.reclinavel = reclinavel
+          this.cor = cor
+        }
+
+        recSofa() {
+          if (this.reclinavel === true) {
+            console.log("Sim")
+          } else {
+            console.log("Não")
+          }
+        }
+      }
+
+      let sofa = new Sofa(4, false, "azul")
+      let sofa2 = new Sofa(6, true, "Preto")
+
+      sofa.recSofa()
+      sofa2.recSofa()
+
+      let sofas = []
+      sofas.push(new Sofa(4, true, "amarelo"))
+      sofas.push(new Sofa(2, false, "Verde"))
+
+      console.log(sofas)
+      class Cadeira {
+        constructor(qtde_pernas, giratoria, cor) {
+          this.qtde_pernas = qtde_pernas
+          this.giratoria = giratoria
+          this.cor = cor
+        }
+
+        girarCadeira() {
+          if (this.giratoria === true) {
+            console.log("girou")
+          } else {
+            console.log("não girou")
+          }
+        }
+      }
+
+      let cadeira = new Cadeira(4, false, "azul")
+      let cadeira2 = new Cadeira(1, true, "vermelha")
+      cadeira.girarCadeira()
+      cadeira2.girarCadeira()
+
+      let cadeiras = []
+      cadeiras.push(new Cadeira(3, false, "amarelho"))
+      cadeiras.push(new Cadeira(4, true, "verde"))
+
+      console.log(cadeiras)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // contexto spread
+      // string
+      let tituloArticulo = "como usar spread"
+      console.log(tituloArticulo)
+      console.log(...tituloArticulo)
+      console.log([...tituloArticulo])
+
+      // arrays
+      let listaCursos1 = ["NodeJs e MongoDb", "ES6, TypeScript e Angular 4"]
+      let listaCursos2 = [
+        "Multiplataforma Android/IOS",
+        "Introdução ap GNU/Linux",
+      ]
+      let listaCursosCompleto = [
+        "Web Completo",
+        "Android Completo",
+        ...listaCursos1,
+        ...listaCursos2,
+      ]
+
+      console.log(listaCursosCompleto)
+
+      // objetos
+      let pessoa = { nome: "joao", idade: 27 }
+      let clone = { endereço: "Rua abc", ...pessoa }
+
+      console.log(clone)
+    </script>
+  </body>
+</html>

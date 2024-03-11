@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // array
+      let arr = [10, 20, 30, 40]
+      let [n1, ...resto] = arr
+      console.log(n1)
+      console.log(resto)
+
+      // objetos
+      let obj = {
+        a: 10,
+        b: 20,
+        c: 30,
+        d: 40,
+      }
+
+      let { a, ...z } = obj
+      console.log(a)
+      console.log(z)
+    </script>
+  </body>
+</html>
