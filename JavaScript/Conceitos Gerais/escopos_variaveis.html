@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // 3 escopos : global, função e o bloco
+      // global é o script como um todo.
+      // função é um subprograma dentro de {}
+      // escopo de bloco são comandos são intruções dentro de comandos
+
+      // escopo global
+      var serie = "GoT"
+      // escopo bloco
+      if (true) {
+        var series2 = "Friends"
+        document.write(serie)
+      }
+
+      document.write(series2)
+
+      document.write("<br/> ")
+
+      function x() {
+        var serie3 = "TWD"
+        document.write(serie)
+        document.write(series2)
+
+      }
+
+      x()
+
+      document.write(serie3)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // E (&&) - Verdadeiro se todas expressões forem verdadeiras
+      // OU (||) - Verdadeiro se pelo menos uma das expressões for verdadeira
+      // Negação (!) - Inverte o resultado da expressão de comparação
+
+      var nota = prompt("coloque a nota")
+      var faltas = prompt("coloque as faltas")
+
+      var media = 7
+      var presenca = 15
+
+      if (nota >= media && faltas <= presenca) {
+        document.write("Aprovado")
+      } else {
+        document.write("Reprovado")
+      }
+
+      var resultado =
+        nota >= media && faltas <= presenca ? "Aprovado" : "Reprovado"
+      document.write(resultado)
+    </script>
+  </body>
+</html>

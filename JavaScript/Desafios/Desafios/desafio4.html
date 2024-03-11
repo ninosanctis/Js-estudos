@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var n1 = prompt("Digite primeiro numero")
+      var n2 = prompt("Digite segundo numero")
+      var op = prompt("1 = soma ou 2 = subtração")
+
+      function calc() {
+        n1 = parseFloat(n1)
+        n2 = parseFloat(n2)
+
+        var resultado = null
+
+        if (op == "1") {
+          resultado = n1 + n2
+        }
+        if (op == "2") {
+          resultado = n1 - n2
+        }
+
+        return resultado
+      }
+      document.write("O resultado é: " + calc())
+    </script>
+  </body>
+</html>

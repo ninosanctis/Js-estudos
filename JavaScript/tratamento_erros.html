@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      
+      // Netflix
+      var video = []
+
+      video[1] = []
+      video[1]["nome"] = "Fullmetal"
+      video[1]["categoria"] = "Anime"
+
+      function getVideo(video) {
+        try {
+          console.log(video[0]["nome"])
+        } catch (erro) {
+          tratarErro(erro)
+          console.log("Agora sim podemos tratar o erro")
+          throw new Error("Houve um erro, já estamos trabalhando nisso")
+        } finally {
+          console.log("Sempre passa por aqui (try or catch)")
+        }
+      }
+
+      function tratarErro(e) {
+        console.log(e)
+      }
+
+      getVideo(video)
+    </script>
+  </body>
+</html>
